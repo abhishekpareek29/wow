@@ -47,35 +47,35 @@ $(document).ready(function(){
 
   })
 
-  /* on clicking LOG IN button validation of log in form will take place */
-  $(".get-in-log").click(function(){                                
-    var email=$(".email-entry").val();                                   /* validate email entry */
-    if(email == null || email == ""){
-      alert("Please enter a valid Email Address");
-      return false;
-    }
-     if(!validateEmail(email)){
-      alert("Please Enter a Valid Email Address");
-      return false;
-    }
-    var psw=$(".psw-entry").val();                                       /* validate password entry */
-    if(psw == null || psw == ""){
-      alert("Password required");
-      return false;
-    }
+/* on clicking LOG IN button validation of log in form will take place */
+$(".get-in-log").click(function(){                                
+  var email=$(".email-entry").val();                                   /* validate email entry */
+  if(email == null || email == ""){
+    alert("Please enter a valid Email Address");
+    return false;
+  }
+  if(!validateEmail(email)){
+    alert("Please Enter a Valid Email Address");
+    return false;
+  }
+  var psw=$(".psw-entry").val();                                       /* validate password entry */
+  if(psw == null || psw == ""){
+    alert("Password required");
+    return false;
+  }
 
-  })
-  
-  /*  on cliking login button sign up form will hide and login form will show up */
-  $(".login-button").click(function(){
-    $(".signup-page").hide();
-    $(".login-page").show();
+})
 
-  })
-  $(".login-button").focus(function(){
-    $(this).css("background-color", "#4CC39D");
-    $(".signup-button").css("background-color", "#413838");
-  })
+/*  on cliking login button sign up form will hide and login form will show up */
+$(".login-button").click(function(){
+  $(".signup-page").hide();
+  $(".login-page").show();
+
+})
+$(".login-button").focus(function(){
+  $(this).css("background-color", "#4CC39D");
+  $(".signup-button").css("background-color", "#413838");
+})
 
 })
 
