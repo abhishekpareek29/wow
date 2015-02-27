@@ -9,6 +9,7 @@ body {
   background-color: #DBB8FF;  
 }
 
+
 /* css of whole login or sign up card */
 div.login-card {
   position: relative;
@@ -21,7 +22,6 @@ div.login-card {
   margin-bottom: 75px;
   border-radius: 6px;
   box-shadow: 0px 0px 30px grey;
-
 }
 
 /* css of top block */
